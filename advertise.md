@@ -9,4 +9,4 @@
 ## - VITOGE: 1$ / week
 ## - BAN: 1$ / week
 ## - VIVA: 2$ / week
-## - KNOBSACK: 5$ / week
+## - KNOBSACK: 1$ / week
