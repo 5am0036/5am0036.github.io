@@ -1,6 +1,6 @@
-# **Advertise With Me**
+# **Advertise With 5th Avenue**
 
-## I run a Discord [server](https://5am.info/5hort/discord) with multiple [VITE](https://vite.org) based tokens! I offer an advertising service that will DM users that use the faucet with any advertisement you would like. Prices are based on which token is claimed the most.
+## I run a Discord [server](https://5am.info/5hort/discord) with [VITE](https://vite.org) based token faucet! I offer an advertising service that will DM users that use the faucet with any advertisement you would like. Prices are based on which token is claimed the most.
 ## **Pricing:**
 ## - VITC: 5$ / week
 ## - VITE: 5$ / week
