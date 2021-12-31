@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViteNS</title>
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/qr.min.js"></script>
+    <script src="assets/vite/vite.js"></script>
+    <script src="assets/vite/vite-ws.js"></script>
+    <script src="assets/polyfill/buffer.js"></script>
+    <script src="assets/index.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/toast.css">
+</head>
+<body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h2 class="center" id="loadingText">Loading</h2>
+            <h3 class="center" id="nameShow_" style="display:none;">
+                About name: <span id="nameShow" class="monospace"></span>
+            </h3>
+            <h5 style="display:none;" id="nameTargetView_">
+                Targets: <span id="nameTargetView" class="monospace">Loading...</span>
+            </h5>
+            <h5 style="display:none;" id="nameSlotView_">
+                Slot of NFT: <span id="nameSlotView" class="monospace">Loading...</span>
+            </h5>
+
+            <div class="separate">
+                <div class="center" id="mintingArea">
+                    <span class="monospace">For minting:</span>
+                    <div id="qrMinting" class="qr"></div>
+                </div>
+            </div>
+
+            <div class="margin-5">
+                <button class="button" id="ownerTools">Show owner tools</button>
+            </div>
+
+            <div class="separate">
+                <div class="center" id="transferingArea">
+                    <span class="monospace">For transfering:</span>
+                    <div id="qrTransfering" class="qr"></div>
+                    <div class="margin-20"></div>
+                    <input id="transferAddress" placeholder="Vite address">
+                </div>
+                <div class="center" id="editingArea">
+                    <span class="monospace">Edit tag:</span>
+                    <div id="qrEditing" class="qr"></div>
+                    <div class="margin-20"></div>
+                    <input id="tagId" placeholder="TagID 0-4">
+                    <div class="margin-5"></div>
+                    <input id="valueTag" placeholder="Value">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="margin-100"></div>
+        <h1>Vite<span class=vino>NS</span></h1>
+        <div class="margin-50"></div>
+        <div class="margin-50"></div>
+        <input type="text" id="searchForName" class="name-box" maxlength="18" placeholder="Search for a name" required>
+        <div class="margin-50"></div>
+        <div class="margin-50"></div>
+        <h3>
+            Total minted names: <span id="nameCount" class="monospace">Loading...</span>
+        </h3>
+        <div class="margin-50"></div>
+        <div class="margin-100"></div>
+        <div>
+            <h3>Contract Address</h3>
+            <p id="contractAddress" class="monospace">Loading...</p>
+        </div>
+        <h5>Everything is based on trustless smart contracts. | Now in Testnet!</h5>
+        <div class="margin-20"></div>
+    </div>
+
+    <div id="toast"><div id="desc">evil morty</div></div>
+</body>
+</html>
