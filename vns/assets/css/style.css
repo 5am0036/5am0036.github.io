@@ -3,13 +3,13 @@
 :root {
     --header-primary: #fff;
     --text-link: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
-    --background-secondary: #2A2A2E;
+    --background-secondary: #212529;
 }
 
 ::-webkit-scrollbar {
     display: none;
 }
-  
+
 ::-webkit-scrollbar-button {
     display: none;
 }
@@ -57,9 +57,9 @@ a {
     border: none;
     border-radius: 5px;
 }
-  
+
 .button:hover {background-color: rgb(23, 107, 233);}
-  
+
 .button:active {
     background-color: rgb(2, 101, 248);;
     transform: translateY(4px);
@@ -77,7 +77,7 @@ span.vino {
     background: rgba(28,118,252,1);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;  
+    -webkit-text-fill-color: transparent;
 }
 
 div.alert-warn {
