@@ -3,13 +3,13 @@
 :root {
     --header-primary: #fff;
     --text-link: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
-    --background-secondary: #212529;
+    --background-secondary: #2A2A2E;
 }
 
 ::-webkit-scrollbar {
     display: none;
 }
-
+  
 ::-webkit-scrollbar-button {
     display: none;
 }
@@ -22,6 +22,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+::-moz-selection { background: #2c343a; }
+::selection { background: #2c343a; }
+
 *.center {
     text-align: center;
 }
@@ -29,18 +32,14 @@ body {
 .margin-100 {
     margin-top: 100px;
 }
-.margin-20 {
-    margin-top: 20px;
-}
 .margin-50 {
     margin-top: 50px;
 }
+.margin-20 {
+    margin-top: 20px;
+}
 .margin-5 {
     margin-top: 5px;
-}
-
-a {
-    color: var(--text-link);
 }
 
 .button {
@@ -57,9 +56,9 @@ a {
     border: none;
     border-radius: 5px;
 }
-
+  
 .button:hover {background-color: rgb(23, 107, 233);}
-
+  
 .button:active {
     background-color: rgb(2, 101, 248);;
     transform: translateY(4px);
@@ -73,39 +72,8 @@ div.separate {
     gap: 100px;
 }
 
-span.vino {
-    background: rgba(28,118,252,1);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-div.alert-warn {
-    background-color: rgba(255, 166, 0, 0.05);
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid rgb(255, 166, 0);
-    margin: 0 100px 0 100px;
-}
-div.alert-error {
-    background-color: rgba(211, 122, 122, 0.05);
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid red;
-    margin: 0 100px 0 100px;
-}
-div.alert-success {
-    background-color: rgba(75, 181, 67, 0.05);
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid rgb(75, 181, 67);
-    margin: 0 100px 0 100px;
-}
-
-@media only screen and (max-width: 600px) {
-    div.alert-warn {
-        margin: 0;
-    }
+span.ns {
+    color: #047bea;
 }
 
 @media only screen and (max-width: 562.09px) {
@@ -123,20 +91,18 @@ div.alert-success {
   color: white;
 	width:240px;
 	height:35px;
-	border-radius:5px;
   transition-property:background-color,border-radius,width,height,color;
   transition-duration:0.215s;
   transition-delay: 0.215s;
-  text-align:center;
+  text-align: center;
   border: none;
   float: none;
-  border-bottom: 1px solid rgba(28,118,252,1);
+  border-bottom: 1px solid #047bea;
   font-family: 'Overpass Mono', monospace;
   background-color: transparent;
 }
 
 .name-box:hover {
-	border-radius:15px;
 	color:white;
 	width:250px;
 	height:35px;
@@ -179,5 +145,21 @@ img {
     margin: 10% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 75%;
+}
+
+.modal-settings-content {
+    background-color: #2A2A2E;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 75%;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
