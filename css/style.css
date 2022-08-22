@@ -95,13 +95,13 @@ h1, h2, h3, h4, h5, h6, figure {
   background-repeat: no-repeat;
   background-size: cover;
   background-attached: fixed;
-  height: 500px;
+  height: 200px;
   width: 100%;
   position: relative;
   z-index: 2;
-  -webkit-box-shadow: inset 0px -5px 11px -6px rgba(0, 0, 0, 0.25);
+  /*-webkit-box-shadow: inset 0px -5px 11px -6px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0px -5px 11px -6px rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0px -5px 11px -6px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px -5px 11px -6px rgba(0, 0, 0, 0.25);*/
 }
 @media screen and (max-width: 768px) {
   #fh5co-header {
@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-  border: 10px solid #fff;
+  border: 10px solid #C993FC;
 }
 #fh5co-header .bio-photo a:after {
   display: none !important;
@@ -148,6 +148,17 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-main strong {
   color: #000;
 }
+
+#corner-right {
+    position: relative;
+}
+#corner-right img {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding-bottom: 10px;
+    
+  }
 
 .fh5co-section {
   padding: 7em 0;
